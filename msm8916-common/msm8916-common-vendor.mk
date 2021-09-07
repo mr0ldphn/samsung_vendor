@@ -6,9 +6,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/samsung/msm8916-common
 
 PRODUCT_COPY_FILES += \
-    vendor/samsung/msm8916-common/proprietary/vendor/lib/libsec-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsec-ril.so \
-    vendor/samsung/msm8916-common/proprietary/vendor/lib/libril-qc-radioconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib/libril-qc-radioconfig.so \
-    vendor/samsung/msm8916-common/proprietary/vendor/lib/libril-qcril-hook-oem.so:$(TARGET_COPY_OUT_VENDOR)/lib/libril-qcril-hook-oem.so \
     vendor/samsung/msm8916-common/proprietary/vendor/lib/libsmemlog.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsmemlog.so \
     vendor/samsung/msm8916-common/proprietary/vendor/bin/adsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/adsprpcd \
     vendor/samsung/msm8916-common/proprietary/vendor/bin/btnvtool:$(TARGET_COPY_OUT_VENDOR)/bin/btnvtool \
@@ -73,7 +70,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/msm8916-common/proprietary/vendor/lib/libqomx_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqomx_core.so \
     vendor/samsung/msm8916-common/proprietary/vendor/lib/libseckeyprov.so:$(TARGET_COPY_OUT_VENDOR)/lib/libseckeyprov.so \
     vendor/samsung/msm8916-common/proprietary/vendor/lib/libsecnativefeature.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecnativefeature.so \
-    vendor/samsung/msm8916-common/proprietary/vendor/lib/libsecril-client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecril-client.so \
     vendor/samsung/msm8916-common/proprietary/vendor/lib/libsomx263dsw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsomx263dsw.so \
     vendor/samsung/msm8916-common/proprietary/vendor/lib/libsomx264dsw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsomx264dsw.so \
     vendor/samsung/msm8916-common/proprietary/vendor/lib/libsomxaacd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsomxaacd.so \
@@ -167,7 +163,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/msm8916-common/proprietary/vendor/lib/libperipheral_client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperipheral_client.so \
     vendor/samsung/msm8916-common/proprietary/vendor/lib/libprdrmdecrypt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libprdrmdecrypt.so \
     vendor/samsung/msm8916-common/proprietary/vendor/lib/libqomx_jpegdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqomx_jpegdec.so \
-    vendor/samsung/msm8916-common/proprietary/vendor/lib/libril-qcril-hook-oem.so:$(TARGET_COPY_OUT_VENDOR)/lib/libril-qcril-hook-oem.so \
     vendor/samsung/msm8916-common/proprietary/vendor/lib/librpmb.so:$(TARGET_COPY_OUT_VENDOR)/lib/librpmb.so \
     vendor/samsung/msm8916-common/proprietary/vendor/lib/librs_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/librs_adreno.so \
     vendor/samsung/msm8916-common/proprietary/vendor/lib/librs_adreno_sha1.so:$(TARGET_COPY_OUT_VENDOR)/lib/librs_adreno_sha1.so \
