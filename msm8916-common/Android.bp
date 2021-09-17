@@ -5,6 +5,40 @@
 soong_namespace {
 }
 
+android_app_import {
+	name: "Lawnchair",
+	owner: "lawnchair",
+	apk: "proprietary/system/priv-app/Lawnchair/Lawnchair.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+
+android_app_import {
+	name: "Gcam",
+	owner: "google",
+	apk: "proprietary/system/priv-app/Gcam/Gcam.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+android_app_import {
+	name: "OTA",
+	owner: "LineageOS",
+	apk: "proprietary/system/priv-app/OTA/OTA.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
 cc_prebuilt_library_shared {
 	name: "libloc_api_v02",
 	owner: "samsung",
