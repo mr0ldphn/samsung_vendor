@@ -6,4 +6,41 @@ LOCAL_PATH := $(call my-dir)
 
 ifneq ($(filter a3lte a33g a3ulte a5ltechn a5ltectc fortuna3g fortunave3g fortunalteub gprimelte gprimeltexx gprimeltespr gprimeltetfnvzw gprimeltezt gprimeltectc gtelwifiue gtesqltespr gt510wifi j3ltectc j3ltespr j3xprolte 	j53gxx j5lte j5ltechn j5nlte j5xnlte j5xlte j5xltecmcc j7ltespr j7ltechn o7prolte on7ltechn serranovelte serranove3g,$(TARGET_DEVICE)),)
 
+include $(CLEAR_VARS)
+LOCAL_MODULE := Lawnchair
+LOCAL_MODULE_OWNER := lawnchair
+LOCAL_SRC_FILES := proprietary/system/priv-app/Lawnchair/Lawnchair.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_PRIVILEGED_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := Gcam
+LOCAL_MODULE_OWNER := google
+LOCAL_SRC_FILES := proprietary/system/priv-app/Gcam/Gcam.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_PRIVILEGED_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := OTA
+LOCAL_MODULE_OWNER := LineageOS
+LOCAL_SRC_FILES := proprietary/system/priv-app/OTA/OTA.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_PRIVILEGED_MODULE := true
+include $(BUILD_PREBUILT)
+
+
 endif
