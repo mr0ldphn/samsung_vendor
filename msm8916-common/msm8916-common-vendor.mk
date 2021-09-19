@@ -206,4 +206,5 @@ PRODUCT_PACKAGES += \
     TimeService \
     Gcam \
     Lawnchair \
-    OTA
+    OTA \
+    GalleryGo
