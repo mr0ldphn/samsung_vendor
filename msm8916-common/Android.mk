@@ -31,6 +31,18 @@ LOCAL_VENDOR_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := GalleryGo
+LOCAL_MODULE_OWNER := google
+LOCAL_SRC_FILES := proprietary/system/priv-app/GalleryGo/GalleryGo.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_VENDOR_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := OTA
 LOCAL_MODULE_OWNER := LineageOS
 LOCAL_SRC_FILES := proprietary/system/priv-app/OTA/OTA.apk
