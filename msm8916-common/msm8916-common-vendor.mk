@@ -203,8 +203,4 @@ PRODUCT_PACKAGES += \
     libbtnv \
     libqct_resampler \
     libtime_genoff \
-    TimeService \
-    Gcam \
-    Lawnchair \
-    OTA \
-    GalleryGo
+    TimeService 
