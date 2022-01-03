@@ -21,7 +21,7 @@ include $(BUILD_PREBUILT)
 include $(CLEAR_VARS)
 LOCAL_MODULE := OpenCamera
 LOCAL_MODULE_OWNER := Mark Harman
-LOCAL_SRC_FILES := proprietary/system/priv-app/OpenCamera/net.sourceforge.opencamera_82.apk
+LOCAL_SRC_FILES := proprietary/system/priv-app/OpenCamera/OpenCamera.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
