@@ -183,7 +183,14 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/msm8916-common/proprietary/vendor/lib/libfastcvopt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcvopt.so \
     vendor/samsung/msm8916-common/proprietary/vendor/lib/libscve_mv.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscve_mv.so \
     vendor/samsung/msm8916-common/proprietary/vendor/lib/libscve.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscve.so 
-    
+
+# MicroG
+PRODUCT_PACKAGES += \
+    gms \
+    droidguard \
+    vending \
+    gsf
+
 # Perf
 PRODUCT_COPY_FILES += \
     vendor/samsung/msm8916-common/proprietary/vendor/bin/perfd:$(TARGET_COPY_OUT_VENDOR)/bin/perfd \
@@ -195,6 +202,11 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/msm8916-common/proprietary/vendor/lib/libmm-als.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmm-als.so \
     vendor/samsung/msm8916-common/proprietary/vendor/lib/libmm-abl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmm-abl.so \
     vendor/samsung/msm8916-common/proprietary/vendor/lib/libdisp-aba.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdisp-aba.so 
+
+# Proprietary-apps
+PRODUCT_PACKAGES += \
+    Lawnchair \
+    Gcam
 
 # Radio
 PRODUCT_COPY_FILES += \
