@@ -2190,14 +2190,14 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libsecril-client",
+	name: "libsecril-client-samsung",
 	owner: "samsung",
 	strip: {
 		none: true,
 	},
 	target: {
 		android_arm: {
-			srcs: ["proprietary/vendor/lib/libsecril-client.so"],
+			srcs: ["proprietary/vendor/lib/libsecril-client-samsung.so"],
 		},
 	},
 	compile_multilib: "32",
