@@ -308,6 +308,5 @@ PRODUCT_COPY_FILES += \
     libprotobuf-cpp-full-old \
     libstagefright_foundation-old \
     libcutils-old \
-    librs_adreno_sha1.so \
-    libsec-ril
+    librs_adreno_sha1.so 
     
