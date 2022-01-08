@@ -2549,7 +2549,7 @@ android_app_import {
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
-	},
+}
 	
 	
 android_app_import {
@@ -2559,7 +2559,7 @@ android_app_import {
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
-	},
+}
 
 android_app_import {
 	name: "Gcam",
@@ -2568,7 +2568,7 @@ android_app_import {
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
-	},
+}
 
 android_app_import {
 	name: "gms",
@@ -2577,7 +2577,7 @@ android_app_import {
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
-	},
+}
 	
 android_app_import {
 	name: "droidguard",
@@ -2586,7 +2586,7 @@ android_app_import {
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
-	},
+}
 	
 android_app_import {
 	name: "vending",
@@ -2595,7 +2595,7 @@ android_app_import {
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
-	},
+}
 
 android_app_import {
 	name: "gsf",
@@ -2604,7 +2604,7 @@ android_app_import {
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
-	},
+}
 
 
 }
