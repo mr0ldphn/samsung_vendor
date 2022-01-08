@@ -916,7 +916,7 @@ cc_prebuilt_library_shared {
 	},
 	target: {
 		android_arm: {
-			srcs: ["proprietary/vendor/lib/egl/llibGLESv2_adreno.so"],
+			srcs: ["proprietary/vendor/lib/egl/libGLESv2_adreno.so"],
 		},
 	},
 	compile_multilib: "32",
@@ -1620,7 +1620,7 @@ cc_prebuilt_library_shared {
 	},
 	target: {
 		android_arm: {
-			srcs: ["proprietary/vendor/lib/libmm-abl-oem.so.so"],
+			srcs: ["proprietary/vendor/lib/libmm-abl-oem.so"],
 		},
 	},
 	compile_multilib: "32",
