@@ -6,9 +6,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/samsung/msm8916-common
 
 # ADSP
-PRODUCT_COPY_FILES += \
-    vendor/samsung/msm8916-common/proprietary/vendor/bin/adsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/adsprpcd 
-    
 PRODUCT_PACKAGES += \
     libadsprpc
     
@@ -39,7 +36,6 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_COPY_FILES += \
-    vendor/samsung/msm8916-common/proprietary/vendor/bin/mm-qcamera-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/mm-qcamera-daemon \
     vendor/samsung/msm8916-common/proprietary/cameradata/datapattern_420sp.yuv:$(TARGET_COPY_OUT_SYSTEM)/cameradata/datapattern_420sp.yuv \
     vendor/samsung/msm8916-common/proprietary/cameradata/datapattern_front_420sp.yuv:$(TARGET_COPY_OUT_SYSTEM)/cameradata/datapattern_front_420sp.yuv \
     vendor/samsung/msm8916-common/proprietary/vendor/firmware/cpp_firmware_v1_1_1.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_1_1.fw \
@@ -55,12 +51,10 @@ PRODUCT_PACKAGES += \
     libqomx_core \
     libjpegdhw \
     libjpegehw \
-    libmmcamera_faceproc
+    libmmcamera_faceproc \
+    mm-qcamera-daemon
     
 # DRM
-PRODUCT_COPY_FILES += \
-    vendor/samsung/msm8916-common/proprietary/vendor/bin/qcom-system-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/qcom-system-daemon 
-
 PRODUCT_PACKAGES += \
     libhdcp2 \
     libmmQSM \
@@ -71,21 +65,18 @@ PRODUCT_PACKAGES += \
     libdrmfs \
     libdrmtime \
     libtzdrmgenprov \
-    libtzplayready
+    libtzplayready \
+    qcom-system-daemon
 
 # FM
-PRODUCT_COPY_FILES += \
-    vendor/samsung/msm8916-common/proprietary/vendor/bin/fmconfig:$(TARGET_COPY_OUT_VENDOR)/bin/fmconfig \
-    vendor/samsung/msm8916-common/proprietary/vendor/bin/fm_qsoc_patches:$(TARGET_COPY_OUT_VENDOR)/bin/fm_qsoc_patches 
-    
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.fm@1.0-impl \
-    vendor.qti.hardware.fm@1.0_vendor
+    vendor.qti.hardware.fm@1.0_vendor \
+    fmconfig \
+    fm_qsoc_patches
+    
 
 # GPS
-PRODUCT_COPY_FILES += \
-    vendor/samsung/msm8916-common/proprietary/vendor/bin/loc_launcher:$(TARGET_COPY_OUT_VENDOR)/bin/loc_launcher 
-
 PRODUCT_PACKAGES += \
     libloc_api_v02 \
     libloc_ds_api \
@@ -93,7 +84,8 @@ PRODUCT_PACKAGES += \
     libflp \
     libgeofence \
     liblbs_core \
-    libizat_core
+    libizat_core \
+    loc_launcher
     
 # Graphics
 PRODUCT_PACKAGES += \
@@ -178,17 +170,15 @@ PRODUCT_PACKAGES += \
     libmmparser
     
 # Miscellaneous
-PRODUCT_COPY_FILES += \
-    vendor/samsung/msm8916-common/proprietary/vendor/bin/ssr_diag:$(TARGET_COPY_OUT_VENDOR)/bin/ssr_diag \
-    vendor/samsung/msm8916-common/proprietary/vendor/bin/ssr_setup:$(TARGET_COPY_OUT_VENDOR)/bin/ssr_setup \
-    vendor/samsung/msm8916-common/proprietary/vendor/bin/wdsdaemon:$(TARGET_COPY_OUT_VENDOR)/bin/wdsdaemon \
-    vendor/samsung/msm8916-common/proprietary/vendor/bin/subsystem_ramdump:$(TARGET_COPY_OUT_VENDOR)/bin/subsystem_ramdump 
-
 PRODUCT_PACKAGES += \
     libedmnativehelper \
     libfastcvopt \
     libscve_mv \
-    libscve
+    libscve \
+    ssr_diag \
+    ssr_setup \
+    wdsdaemon \
+    subsystem_ramdump
 
 # MicroG
 PRODUCT_PACKAGES += \
@@ -197,13 +187,11 @@ PRODUCT_PACKAGES += \
     vending \
     gsf
 
-# Perf
-PRODUCT_COPY_FILES += \
-    vendor/samsung/msm8916-common/proprietary/vendor/bin/perfd:$(TARGET_COPY_OUT_VENDOR)/bin/perfd 
-    
+# Perf    
 PRODUCT_PACKAGES += \
     libqti-at \
-    libqti-perfd-client 
+    libqti-perfd-client \
+    perfd
 
 # Post-processing
 PRODUCT_PACKAGES += \
@@ -217,21 +205,6 @@ PRODUCT_PACKAGES += \
     Gcam
 
 # Radio
-PRODUCT_COPY_FILES += \
-    vendor/samsung/msm8916-common/proprietary/vendor/bin/diag_mdlog:$(TARGET_COPY_OUT_VENDOR)/bin/diag_mdlog \
-    vendor/samsung/msm8916-common/proprietary/vendor/bin/diag_uart_log:$(TARGET_COPY_OUT_VENDOR)/bin/diag_uart_log \
-    vendor/samsung/msm8916-common/proprietary/vendor/bin/netmgrd:$(TARGET_COPY_OUT_VENDOR)/bin/netmgrd \
-    vendor/samsung/msm8916-common/proprietary/vendor/bin/ftm_ptt:$(TARGET_COPY_OUT_VENDOR)/bin/ftm_ptt \
-    vendor/samsung/msm8916-common/proprietary/vendor/bin/ptt_socket_app:$(TARGET_COPY_OUT_VENDOR)/bin/ptt_socket_app \
-    vendor/samsung/msm8916-common/proprietary/vendor/bin/port-bridge:$(TARGET_COPY_OUT_VENDOR)/bin/port-bridge \
-    vendor/samsung/msm8916-common/proprietary/vendor/bin/qmuxd:$(TARGET_COPY_OUT_VENDOR)/bin/qmuxd \
-    vendor/samsung/msm8916-common/proprietary/vendor/bin/rmt_storage:$(TARGET_COPY_OUT_VENDOR)/bin/rmt_storage \
-    vendor/samsung/msm8916-common/proprietary/vendor/bin/radish:$(TARGET_COPY_OUT_VENDOR)/bin/radish \
-    vendor/samsung/msm8916-common/proprietary/vendor/bin/wlandutservice:$(TARGET_COPY_OUT_VENDOR)/bin/wlandutservice \
-    vendor/samsung/msm8916-common/proprietary/etc/plmn_delta.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/plmn_delta.bin \
-    vendor/samsung/msm8916-common/proprietary/etc/plmn_se13.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/plmn_se13.bin \
-    vendor/samsung/msm8916-common/proprietary/etc/srm.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/srm.bin 
-
 PRODUCT_PACKAGES += \
     libatparser \
     libwcnftms \
@@ -244,7 +217,19 @@ PRODUCT_PACKAGES += \
     libperipheral_client \
     libsubsystem_control \
     libSubSystemShutdown \
-    libxml
+    libxml \
+    diag_mdlog \
+    diag_uart_log \
+    netmgrd \
+    ftm_ptt \
+    ptt_socket_app \
+    port-bridge \
+    qmuxd \
+    rmt_storage \
+    radish \
+    wlandutservice \
+    plmn_delta \
+    plmn_se13 \
     
 # RIL    
 PRODUCT_PACKAGES += \
@@ -257,56 +242,46 @@ PRODUCT_PACKAGES += \
     libsecnativefeature \
     libseckeyprov
     
-# Security
-PRODUCT_COPY_FILES += \
-    vendor/samsung/msm8916-common/proprietary/vendor/bin/irsc_util:$(TARGET_COPY_OUT_VENDOR)/bin/irsc_util 
-    
+# Security    
 PRODUCT_PACKAGES += \
-    libgdmcprov 
+    libgdmcprov \
+    irsc_util
     
 # STLport
 PRODUCT_PACKAGES += \
     libstlport
 
 # Thermal
-PRODUCT_COPY_FILES += \
-    vendor/samsung/msm8916-common/proprietary/vendor/bin/thermal-engine:$(TARGET_COPY_OUT_VENDOR)/bin/thermal-engine 
-    
 PRODUCT_PACKAGES += \
     libthermalclient \
-    libthermalioctl
+    libthermalioctl \
+    thermal-engine
     
 # Time services
-PRODUCT_COPY_FILES += \
-    vendor/samsung/msm8916-common/proprietary/vendor/bin/time_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/time_daemon 
-    
 PRODUCT_PACKAGES += \
     libtime_genoff \
     TimeService \
-    libTimeService
+    libTimeService \
+    time_daemon
     
 # Widevine
 PRODUCT_COPY_FILES += \
-    vendor/samsung/msm8916-common/proprietary/vendor/bin/hw/android.hardware.drm@1.2-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.2-service.widevine \
     vendor/samsung/msm8916-common/proprietary/vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.2-service.widevine.rc
 
 PRODUCT_PACKAGES += \
     libwvm \
     libWVStreamControlAPI_L1 \
     libwvhidl \
-    libwvdrmengine
-    
+    libwvdrmengine \
+    android.hardware.drm@1.2-service 
 
 # Other
-PRODUCT_COPY_FILES += \
-    vendor/samsung/msm8916-common/proprietary/vendor/bin/btnvtool:$(TARGET_COPY_OUT_VENDOR)/bin/btnvtool \
-    vendor/samsung/msm8916-common/proprietary/vendor/bin/hci_qcomm_init:$(TARGET_COPY_OUT_VENDOR)/bin/hci_qcomm_init \
-    vendor/samsung/msm8916-common/proprietary/etc/plmn_se13.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/plmn_se13.bin 
-    
  PRODUCT_PACKAGES += \
     libprotobuf-cpp-lite-old \
     libprotobuf-cpp-full-old \
     libstagefright_foundation-old \
     libcutils-old \
-    librs_adreno_sha1.so 
+    librs_adreno_sha1.so \
+    btnvtool \
+    plmn_se13
     
