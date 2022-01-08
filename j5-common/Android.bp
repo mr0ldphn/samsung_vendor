@@ -5,8 +5,6 @@
 soong_namespace {
 }
 
-# Prebuilt libs using the cc_prebuilt_library_shared
-# ELF prebuilts were banned in PRODUCT_COPY_FILES starting May 11. This address future build issues
 cc_prebuilt_library_shared {
 	name: "camera.vendor.msm8916",
 	owner: "samsung",
