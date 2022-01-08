@@ -193,23 +193,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libchromatix_s5k3l2xx_common_1080p_b",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libchromatix_s5k3l2xx_common_1080p_b.so"],
-		},
-	},
-	compile_multilib: "32",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libchromatix_s5k3l2xx_common_1080p_s",
 	owner: "samsung",
 	strip: {
@@ -1259,25 +1242,6 @@ cc_prebuilt_library_shared {
 	prefer: true,
 	soc_specific: true,
 }
-
-
-cc_prebuilt_library_shared {
-	name: "libmmcamera_tintless_bg_pca_algo",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libmmcamera_tintless_bg_pca_algo.so"],
-		},
-	},
-	compile_multilib: "32",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
 
 cc_prebuilt_library_shared {
 	name: "libmmcamera_tintless_bg_pca_algo",
