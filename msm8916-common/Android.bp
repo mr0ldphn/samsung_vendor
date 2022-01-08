@@ -2541,7 +2541,9 @@ android_app_import {
 	dex_preopt: {
 		enabled: false,
 	},
-	
+	soc_specific: true,
+}
+
 android_app_import {
 	name: "Lawnchair",
 	owner: "Lawnchair",
@@ -2549,9 +2551,10 @@ android_app_import {
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
+	},
+	soc_specific: true,
 }
-	
-	
+
 android_app_import {
 	name: "OTA",
 	owner: "LineageOS",
@@ -2559,6 +2562,8 @@ android_app_import {
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
+	},
+	soc_specific: true,
 }
 
 android_app_import {
@@ -2568,6 +2573,8 @@ android_app_import {
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
+	},
+	soc_specific: true,
 }
 
 android_app_import {
@@ -2577,6 +2584,8 @@ android_app_import {
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
+	},
+	soc_specific: true,
 }
 	
 android_app_import {
@@ -2586,8 +2595,10 @@ android_app_import {
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
+	},
+	soc_specific: true,
 }
-	
+
 android_app_import {
 	name: "vending",
 	owner: "MicroG",
@@ -2595,6 +2606,8 @@ android_app_import {
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
+	},
+	soc_specific: true,
 }
 
 android_app_import {
@@ -2604,6 +2617,8 @@ android_app_import {
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
+	},
+	soc_specific: true,
 }
 
 
