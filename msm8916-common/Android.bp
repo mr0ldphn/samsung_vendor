@@ -5,7 +5,7 @@
 soong_namespace {
 }
 
-cc_prebuilt_library_shared {
+cc_prebuilt_binary {
 	name: "adsprpcd",
 	owner: "samsung",
 	strip: {
@@ -22,7 +22,7 @@ cc_prebuilt_library_shared {
 	soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
+cc_prebuilt_binary {
 	name: "mm-qcamera-daemon",
 	owner: "samsung",
 	strip: {
@@ -39,7 +39,7 @@ cc_prebuilt_library_shared {
 	soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
+cc_prebuilt_binary {
 	name: "qcom-system-daemon",
 	owner: "samsung",
 	strip: {
@@ -56,7 +56,7 @@ cc_prebuilt_library_shared {
 	soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
+cc_prebuilt_binary{
 	name: "fmconfig",
 	owner: "samsung",
 	strip: {
@@ -74,7 +74,7 @@ cc_prebuilt_library_shared {
 }
 
 
-cc_prebuilt_library_shared {
+cc_prebuilt_binary {
 	name: "fm_qsoc_patches",
 	owner: "samsung",
 	strip: {
@@ -91,7 +91,7 @@ cc_prebuilt_library_shared {
 	soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
+cc_prebuilt_binary {
 	name: "loc_launcher",
 	owner: "samsung",
 	strip: {
@@ -108,8 +108,7 @@ cc_prebuilt_library_shared {
 	soc_specific: true,
 }
 
-
-cc_prebuilt_library_shared {
+cc_prebuilt_binary {
 	name: "ssr_diag",
 	owner: "samsung",
 	strip: {
@@ -127,7 +126,7 @@ cc_prebuilt_library_shared {
 }
 
 
-cc_prebuilt_library_shared {
+cc_prebuilt_binary {
 	name: "ssr_setup",
 	owner: "samsung",
 	strip: {
@@ -145,7 +144,7 @@ cc_prebuilt_library_shared {
 }
 
 
-cc_prebuilt_library_shared {
+cc_prebuilt_binary {
 	name: "wdsdaemon",
 	owner: "samsung",
 	strip: {
@@ -163,7 +162,7 @@ cc_prebuilt_library_shared {
 }
 
 
-cc_prebuilt_library_shared {
+cc_prebuilt_binary {
 	name: "subsystem_ramdump",
 	owner: "samsung",
 	strip: {
@@ -180,7 +179,7 @@ cc_prebuilt_library_shared {
 	soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
+cc_prebuilt_binary {
 	name: "perfd",
 	owner: "samsung",
 	strip: {
@@ -197,7 +196,7 @@ cc_prebuilt_library_shared {
 	soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
+cc_prebuilt_binary {
 	name: "diag_mdlog",
 	owner: "samsung",
 	strip: {
@@ -214,7 +213,7 @@ cc_prebuilt_library_shared {
 	soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
+cc_prebuilt_binary {
 	name: "diag_uart_log",
 	owner: "samsung",
 	strip: {
@@ -231,7 +230,7 @@ cc_prebuilt_library_shared {
 	soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
+cc_prebuilt_binary {
 	name: "netmgrd",
 	owner: "samsung",
 	strip: {
@@ -248,7 +247,7 @@ cc_prebuilt_library_shared {
 	soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
+cc_prebuilt_binary {
 	name: "ftm_ptt",
 	owner: "samsung",
 	strip: {
@@ -265,7 +264,7 @@ cc_prebuilt_library_shared {
 	soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
+cc_prebuilt_binary {
 	name: "ptt_socket_app",
 	owner: "samsung",
 	strip: {
@@ -282,7 +281,7 @@ cc_prebuilt_library_shared {
 	soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
+cc_prebuilt_binary {
 	name: "port-bridge",
 	owner: "samsung",
 	strip: {
@@ -299,8 +298,7 @@ cc_prebuilt_library_shared {
 	soc_specific: true,
 }
 
-
-cc_prebuilt_library_shared {
+cc_prebuilt_binary {
 	name: "qmuxd",
 	owner: "samsung",
 	strip: {
@@ -317,7 +315,7 @@ cc_prebuilt_library_shared {
 	soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
+cc_prebuilt_binary {
 	name: "rmt_storage",
 	owner: "samsung",
 	strip: {
@@ -334,7 +332,7 @@ cc_prebuilt_library_shared {
 	soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
+cc_prebuilt_binary {
 	name: "radish",
 	owner: "samsung",
 	strip: {
@@ -352,7 +350,7 @@ cc_prebuilt_library_shared {
 }
 
 
-cc_prebuilt_library_shared {
+cc_prebuilt_binary {
 	name: "wlandutservice",
 	owner: "samsung",
 	strip: {
@@ -370,7 +368,7 @@ cc_prebuilt_library_shared {
 }
 
 
-cc_prebuilt_library_shared {
+cc_prebuilt_binary {
 	name: "plmn_delta",
 	owner: "samsung",
 	strip: {
@@ -387,7 +385,7 @@ cc_prebuilt_library_shared {
 	soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
+cc_prebuilt_binary{
 	name: "srm",
 	owner: "samsung",
 	strip: {
@@ -404,7 +402,7 @@ cc_prebuilt_library_shared {
 	soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
+cc_prebuilt_binary{
 	name: "irsc_util",
 	owner: "samsung",
 	strip: {
@@ -421,7 +419,7 @@ cc_prebuilt_library_shared {
 	soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
+cc_prebuilt_binary {
 	name: "thermal-engine",
 	owner: "samsung",
 	strip: {
@@ -438,7 +436,7 @@ cc_prebuilt_library_shared {
 	soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
+cc_prebuilt_binary {
 	name: "time_daemon",
 	owner: "samsung",
 	strip: {
@@ -455,7 +453,7 @@ cc_prebuilt_library_shared {
 	soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
+cc_prebuilt_binary {
 	name: "android.hardware.drm@1.2-service",
 	owner: "samsung",
 	strip: {
@@ -472,7 +470,7 @@ cc_prebuilt_library_shared {
 	soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
+cc_prebuilt_binary {
 	name: "btnvtool",
 	owner: "samsung",
 	strip: {
@@ -490,7 +488,7 @@ cc_prebuilt_library_shared {
 }
 
 
-cc_prebuilt_library_shared {
+cc_prebuilt_binary {
 	name: "hci_qcomm_init",
 	owner: "samsung",
 	strip: {
@@ -507,7 +505,7 @@ cc_prebuilt_library_shared {
 	soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
+cc_prebuilt_binary {
 	name: "plmn_se13",
 	owner: "samsung",
 	strip: {
