@@ -237,7 +237,7 @@ PRODUCT_PACKAGES += \
 # RIL    
 PRODUCT_PACKAGES += \
     libaudio-ril \
-    libsecril-client-samsung \
+    libsecril-client \
     libril-qcril-hook-oem
     
 # SAMSUNG
