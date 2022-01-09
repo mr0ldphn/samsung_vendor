@@ -454,7 +454,7 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-	name: "android.hardware.drm@1.2-service",
+	name: "android.hardware.drm@1.2-service.widevine",
 	owner: "samsung",
 	strip: {
 		none: true,
@@ -464,6 +464,7 @@ cc_prebuilt_binary {
 			srcs: ["proprietary/vendor/bin/hw/android.hardware.drm@1.2-service.widevine"],
 		},
 	},
+	relative_install_path: "hw",
 	compile_multilib: "32",
 	check_elf_files: false,
 	prefer: true,
