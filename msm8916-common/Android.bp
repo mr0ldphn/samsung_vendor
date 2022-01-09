@@ -2730,14 +2730,14 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libsecril-client-samsung",
+	name: "libsecril-client",
 	owner: "samsung",
 	strip: {
 		none: true,
 	},
 	target: {
 		android_arm: {
-			srcs: ["proprietary/vendor/lib/libsecril-client-samsung.so"],
+			srcs: ["proprietary/vendor/lib/libsecril-client.so"],
 		},
 	},
 	compile_multilib: "32",
