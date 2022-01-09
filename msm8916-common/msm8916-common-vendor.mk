@@ -230,9 +230,9 @@ PRODUCT_PACKAGES += \
     rmt_storage \
     radish \
     wlandutservice \
-    plmn_delta \
-    plmn_se13 \
-    srm
+    plmn_delta.bin \
+    plmn_se13.bin \
+    srm.bin
     
 # RIL    
 PRODUCT_PACKAGES += \
