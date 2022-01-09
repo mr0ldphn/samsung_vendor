@@ -363,25 +363,6 @@ cc_prebuilt_binary {
 	soc_specific: true,
 }
 
-
-prebuilt_etc {
-	name: "plmn_delta.bin",
-	owner: "samsung",
-        src: "proprietary/etc/plmn_delta.bin",
-	vendor: false,
-	compile_multilib: "32",
-	soc_specific: true,
-}
-
-prebuilt_etc {
-	name: "srm.bin",
-	owner: "samsung",
-	src: "proprietary/etc/srm.bin",
-	vendor: false,
-	compile_multilib: "32",
-	soc_specific: true,
-}
-
 cc_prebuilt_binary{
 	name: "irsc_util",
 	owner: "samsung",
@@ -485,16 +466,6 @@ cc_prebuilt_binary {
 	prefer: true,
 	soc_specific: true,
 }
-
-prebuilt_etc {
-	name: "plmn_se13.bin",
-	owner: "samsung",
-	src: "proprietary/etc/plmn_se13.bin",
-	vendor: false,
-	compile_multilib: "32",
-	soc_specific: true,
-}
-
 
 cc_prebuilt_library_shared {
 	name: "libloc_api_v02",
@@ -2922,79 +2893,6 @@ cc_prebuilt_library_shared {
 	prefer: true,
 	soc_specific: true,
 }
-
-cc_prebuilt_library_shared {
-	name: "libprotobuf-cpp-lite-old",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/lib/libprotobuf-cpp-lite-old.so"],
-		},
-	},
-	vendor: false,
-	compile_multilib: "32",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libprotobuf-cpp-full-old",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/lib/libprotobuf-cpp-full-old.so"],
-		},
-	},
-	vendor: false,
-	compile_multilib: "32",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libstagefright_foundation-old",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/lib/libstagefright_foundation-old.so"],
-		},
-	},
-	vendor: false,
-	compile_multilib: "32",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libcutils-old",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/lib/libcutils-old.so"],
-		},
-	},
-	vendor: false,
-	compile_multilib: "32",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
 
 cc_prebuilt_library_shared {
 	name: "librs_adreno_sha1",
