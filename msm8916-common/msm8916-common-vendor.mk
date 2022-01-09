@@ -7,7 +7,8 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # ADSP
 PRODUCT_PACKAGES += \
-    libadsprpc
+    libadsprpc \
+    adsprpcd
     
 # Audio
 PRODUCT_PACKAGES += \
@@ -231,6 +232,7 @@ PRODUCT_PACKAGES += \
     wlandutservice \
     plmn_delta \
     plmn_se13 \
+    srm
     
 # RIL    
 PRODUCT_PACKAGES += \
@@ -274,7 +276,7 @@ PRODUCT_PACKAGES += \
     libWVStreamControlAPI_L1 \
     libwvhidl \
     libwvdrmengine \
-    android.hardware.drm@1.2-service 
+    android.hardware.drm@1.2-service.widevine
 
 # Other
  PRODUCT_PACKAGES += \
@@ -284,5 +286,6 @@ PRODUCT_PACKAGES += \
     libcutils-old \
     librs_adreno_sha1.so \
     btnvtool \
-    plmn_se13
+    plmn_se13 \
+    hci_qcomm_init
     
