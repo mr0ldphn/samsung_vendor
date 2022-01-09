@@ -16,6 +16,7 @@ cc_prebuilt_library_shared {
 			srcs: ["proprietary/vendor/lib/hw/sensors.vendor.msm8916.so"],
 		},
 	},
+	relative_install_path: "hw",
 	compile_multilib: "32",
 	check_elf_files: false,
 	prefer: true,
