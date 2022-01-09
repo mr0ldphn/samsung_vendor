@@ -202,7 +202,8 @@ PRODUCT_PACKAGES += \
 # Proprietary-apps
 PRODUCT_PACKAGES += \
     Lawnchair \
-    Gcam
+    Gcam \
+    OTA
 
 # Radio
 PRODUCT_PACKAGES += \
@@ -279,8 +280,6 @@ PRODUCT_PACKAGES += \
  PRODUCT_PACKAGES += \
     libprotobuf-cpp-lite-old \
     libprotobuf-cpp-full-old \
-    libprotobuf-cpp-full \
-    libprotobuf-cpp-lite \
     libstagefright_foundation-old \
     libcutils-old \
     librs_adreno_sha1.so \
