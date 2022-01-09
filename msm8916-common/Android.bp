@@ -369,7 +369,7 @@ cc_prebuilt_binary {
 
 
 cc_prebuilt_binary {
-	name: "plmn_delta",
+	name: "plmn_delta.bin",
 	owner: "samsung",
 	strip: {
 		none: true,
@@ -387,7 +387,7 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary{
-	name: "srm",
+	name: "srm.bin",
 	owner: "samsung",
 	strip: {
 		none: true,
@@ -509,7 +509,7 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-	name: "plmn_se13",
+	name: "plmn_se13.bin",
 	owner: "samsung",
 	strip: {
 		none: true,
