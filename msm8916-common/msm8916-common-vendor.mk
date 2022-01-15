@@ -90,7 +90,7 @@ PRODUCT_PACKAGES += \
     
 # Graphics
 PRODUCT_PACKAGES += \
-    eglsubAndroid.so \
+    eglsubAndroid \
     eglSubDriverAndroid \
     libEGL_adreno \
     libESXEGL_adreno \
@@ -158,7 +158,7 @@ PRODUCT_PACKAGES += \
     libExtendedExtractor \
     libFlacSwDec \
     libI420colorconvert \
-    libmm-abl-oem.so \
+    libmm-abl-oem \
     libmm-color-convertor \
     libmm-disp-apis \
     libmm-hdcpmgr \
