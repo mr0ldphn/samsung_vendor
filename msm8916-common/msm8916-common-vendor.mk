@@ -207,6 +207,11 @@ PRODUCT_PACKAGES += \
     OTA
 
 # Radio
+PRODUCT_COPY_FILES += \
+    vendor/samsung/msm8916-common/proprietary/etc/srm.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/srm.bin \
+    vendor/samsung/msm8916-common/proprietary/etc/plmn_delta.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/plmn_delta.bin \
+    vendor/samsung/msm8916-common/proprietary/etc/plmn_se13.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/plmn_se13.bin 
+
 PRODUCT_PACKAGES += \
     libatparser \
     libwcnftms \
@@ -229,8 +234,7 @@ PRODUCT_PACKAGES += \
     qmuxd \
     rmt_storage \
     radish \
-    wlandutservice \
-    plmn_delta.bin 
+    wlandutservice 
     
 # RIL    
 PRODUCT_PACKAGES += \
