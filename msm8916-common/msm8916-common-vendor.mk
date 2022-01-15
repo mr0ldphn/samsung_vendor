@@ -229,10 +229,7 @@ PRODUCT_PACKAGES += \
     qmuxd \
     rmt_storage \
     radish \
-    wlandutservice \
-    srm \
-    plmn_delta \
-    plmn_se13
+    wlandutservice 
     
 # RIL    
 PRODUCT_PACKAGES += \
@@ -280,10 +277,6 @@ PRODUCT_PACKAGES += \
 
 # Other
  PRODUCT_PACKAGES += \
-    libprotobuf-cpp-full \
-    libprotobuf-cpp-lite \
-    libstagefright_foundation-old \
-    libcutils-old \
     librs_adreno_sha1.so \
     btnvtool \
     hci_qcomm_init
