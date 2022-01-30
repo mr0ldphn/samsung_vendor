@@ -202,8 +202,6 @@ PRODUCT_PACKAGES += \
     
 # Proprietary-apps
 PRODUCT_PACKAGES += \
-    Lawnchair \
-    Gcam \
     OTA
 
 # Radio
