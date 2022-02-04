@@ -284,5 +284,6 @@ PRODUCT_PACKAGES += \
     librs_adreno_sha1.so \
     btnvtool \
     hci_qcomm_init \
-    libjni_latinimegoogle
+    libjni_latinimegoogle \
+    libqdi
     
