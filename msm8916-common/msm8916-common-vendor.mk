@@ -23,7 +23,8 @@ PRODUCT_PACKAGES += \
     liblistensoundmodel2 \
     libqcbassboost \
     libqcreverb \
-    libqcvirt
+    libqcvirt \
+    libdsi_netctrl
 
 # AptX
 PRODUCT_PACKAGES += \
