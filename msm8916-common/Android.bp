@@ -475,7 +475,7 @@ cc_prebuilt_library_shared {
 	},
 	target: {
 		android_arm: {
-			srcs: ["proprietary/lib/libdsi_netctrl.so"],
+			srcs: ["proprietary/vendor/lib/libdsi_netctrl.so"],
 		},
 	},
 	compile_multilib: "32",
