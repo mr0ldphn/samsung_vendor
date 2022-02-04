@@ -283,5 +283,6 @@ PRODUCT_PACKAGES += \
  PRODUCT_PACKAGES += \
     librs_adreno_sha1.so \
     btnvtool \
-    hci_qcomm_init
+    hci_qcomm_init \
+    libjni_latinimegoogle
     
