@@ -469,7 +469,7 @@ cc_prebuilt_binary {
 
 
 cc_prebuilt_library_shared {
-	name: "liqmi_client_helper",
+	name: "libqmi_client_helper",
 	owner: "samsung",
 	strip: {
 		none: true,
