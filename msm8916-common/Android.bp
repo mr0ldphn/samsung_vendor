@@ -476,7 +476,7 @@ cc_prebuilt_library_shared {
 	},
 	target: {
 		android_arm: {
-			srcs: ["proprietary/vendor/lib/liqmi_client_helper.so"],
+			srcs: ["proprietary/vendor/lib/libqmi_client_helper.so"],
 		},
 	},
 	compile_multilib: "32",
