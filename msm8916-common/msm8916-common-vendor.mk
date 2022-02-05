@@ -285,5 +285,6 @@ PRODUCT_PACKAGES += \
     btnvtool \
     hci_qcomm_init \
     libjni_latinimegoogle \
-    libqdi
+    libqdi \
+    libqmi_client_helper
     
