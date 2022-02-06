@@ -23,9 +23,8 @@ PRODUCT_PACKAGES += \
     liblistensoundmodel2 \
     libqcbassboost \
     libqcreverb \
-    libqcvirt \
-    libdsi_netctrl
-
+    libqcvirt 
+    
 # AptX
 PRODUCT_PACKAGES += \
     libaptX_encoder \
@@ -87,7 +86,9 @@ PRODUCT_PACKAGES += \
     libgeofence \
     liblbs_core \
     libizat_core \
-    loc_launcher
+    loc_launcher \
+    libdsi_netctrl
+    libloc_pla \
     
 # Graphics
 PRODUCT_PACKAGES += \
