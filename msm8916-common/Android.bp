@@ -2,6 +2,24 @@ soong_namespace {
 }
 
 cc_prebuilt_binary {
+	name: "android.hardware.bluetooth@1.0-service-qti-lazy",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti-lazy"],
+		},
+	},
+	relative_install_path: "hw",
+	compile_multilib: "32",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_binary {
 	name: "adsprpcd",
 	owner: "samsung",
 	strip: {
@@ -466,6 +484,79 @@ cc_prebuilt_binary {
 	prefer: true,
 	soc_specific: true,
 }
+
+cc_prebuilt_library_shared {
+	name: "libqti_vndfwk_detect",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libqti_vndfwk_detect.so"],
+		},
+	},
+	compile_multilib: "32",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.qti.hardware.bluetooth_audio@2.0",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/vendor.qti.hardware.bluetooth_audio@2.0.so"],
+		},
+	},
+	compile_multilib: "32",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.qti.hardware.bluetooth_sar@1.0",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so"],
+		},
+	},
+	compile_multilib: "32",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.qti.hardware.btconfigstore@1.0",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/vendor.qti.hardware.btconfigstore@1.0.so"],
+		},
+	},
+	compile_multilib: "32",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+
+
+
+
 
 
 cc_prebuilt_library_shared {

@@ -31,9 +31,16 @@ PRODUCT_PACKAGES += \
     libaptXHD_encoder
     
 # Bluetooth
+PRODUCT_COPY_FILES += \
+    vendor/samsung/msm8916-common/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti-lazy.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service-qti-lazy.rc
+
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.fm@1.0 \
-    libbtnv
+    libbtnv \
+    android.hardware.bluetooth@1.0-service-qti \
+    vendor.qti.hardware.bluetooth_sar@1.0 \
+    vendor.qti.hardware.btconfigstore@1.0 \
+    libqti_vndfwk_detect
 
 # Camera
 PRODUCT_COPY_FILES += \
