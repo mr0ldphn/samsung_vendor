@@ -94,9 +94,9 @@ PRODUCT_PACKAGES += \
     liblbs_core \
     libizat_core \
     loc_launcher \
-    libdsi_netctrl
+    libdsi_netctrl \
     libloc_pla \
-    libloc_stub\
+    libloc_stub
     
 # Graphics
 PRODUCT_PACKAGES += \
