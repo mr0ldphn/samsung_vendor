@@ -37,7 +37,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.fm@1.0 \
     libbtnv \
-    android.hardware.bluetooth@1.0-service-qti \
+    android.hardware.bluetooth@1.0-service-qti-lazy \
     vendor.qti.hardware.bluetooth_sar@1.0 \
     vendor.qti.hardware.btconfigstore@1.0 \
     libqti_vndfwk_detect
