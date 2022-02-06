@@ -89,6 +89,7 @@ PRODUCT_PACKAGES += \
     loc_launcher \
     libdsi_netctrl
     libloc_pla \
+    libloc_stub\
     
 # Graphics
 PRODUCT_PACKAGES += \
