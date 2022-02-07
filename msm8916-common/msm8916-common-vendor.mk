@@ -318,7 +318,8 @@ PRODUCT_PACKAGES += \
     qti_libpermissions \
     qti_permissions \
     telephonyservice \
-    qti_whitelist
+    qti_whitelist \
+    libprotobuf-cpp-full-v28
 
 PRODUCT_COPY_FILES += \
     vendor/samsung/msm8916-common/proprietary/vendor/radio/qcril_database/qcril.db:system/vendor/radio/qcril_database/qcril.db \
