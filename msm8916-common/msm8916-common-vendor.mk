@@ -120,6 +120,7 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1-impl-qti \
     vendor.qti.gnss@4.0-impl \
     libbatching \
+    libcdfw \
     libcdfw_remote_api \
     libdataitems \
     libgarden \
