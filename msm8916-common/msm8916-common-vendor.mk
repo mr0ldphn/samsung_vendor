@@ -72,13 +72,37 @@ PRODUCT_PACKAGES += \
     libtzplayready \
     qcom-system-daemon
 
+# Dolby Atmos
+PRODUCT_PACKAGES += \
+    DaxUI \
+    daxService \
+    dolby_dax \
+    libdapparamstorage \
+    libdlbdsservice \
+    libstagefright_soft_ddpdec \
+    libstagefrightdolby \
+    libatmos \
+    vendor.dolby.hardware.dms@1.0-impl \
+    vendor.dolby.hardware.dms@1.0 \
+    vendor.dolby.hardware.dms@1.0-service \
+    dap-default \
+    media_codecs_dolby_audio \
+    dolby_dax \
+    privapp-com.dolby.atmos \
+    privapp-com.dolby.daxservice \
+    config-com.dolby.atmos \
+    config-com.dolby.daxappui \
+    config-com.dolby.daxservice
+
+PRODUCT_COPY_FILES += \
+    vendor/samsung/msm8916-common/proprietary/vendor/etc/init/vendor.dolby.hardware.dms@1.0-service.rc:system/vendor/etc/init/vendor.dolby.hardware.dms@1.0-service.rc \
+
 # FM
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.fm@1.0-impl \
     vendor.qti.hardware.fm@1.0_vendor \
     fmconfig \
     fm_qsoc_patches
-
 
 # GPS
 PRODUCT_PACKAGES += \
