@@ -94,7 +94,7 @@ prebuilt_etc_xml {
 prebuilt_etc_xml {
 	name: "qti_whitelist",
 	owner: "samsung",
-	src: "proprietary/system/etc/permissions/qti_whitelist.xml",
+	src: "proprietary/system/etc/sysconfig/qti_whitelist.xml",
 	filename_from_src: true,
 	sub_dir: "permissions",
 	soc_specific: true,
