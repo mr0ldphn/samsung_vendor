@@ -104,19 +104,6 @@ PRODUCT_PACKAGES += \
     fmconfig \
     fm_qsoc_patches
 
-# GPS
-PRODUCT_PACKAGES += \
-    libloc_api_v02 \
-    libloc_ds_api \
-    flp.default \
-    libflp \
-    libgeofence \
-    liblbs_core \
-    libizat_core \
-    loc_launcher \
-    libloc_pla \
-    libloc_stub
-
 # Graphics
 PRODUCT_PACKAGES += \
     eglsubAndroid \
