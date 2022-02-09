@@ -346,23 +346,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-	name: "netmgrd",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/bin/netmgrd"],
-		},
-	},
-	compile_multilib: "32",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
 	name: "qmuxd",
 	owner: "samsung",
 	strip: {
