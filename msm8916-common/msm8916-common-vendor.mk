@@ -36,6 +36,7 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-service-qti-lazy \
     vendor.qti.hardware.bluetooth_sar@1.0 \
     vendor.qti.hardware.btconfigstore@1.0 \
+    android.hardware.bluetooth@1.0-impl-qti \
     libqti_vndfwk_detect
 
 # Camera
