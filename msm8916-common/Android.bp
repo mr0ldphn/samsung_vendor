@@ -795,6 +795,23 @@ cc_prebuilt_binary {
 	soc_specific: true,
 }
 
+cc_prebuilt_library_shared {
+	name: "libc2d30-a5xx",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libc2d30-a5xx.so"],
+		},
+	},
+	compile_multilib: "32",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
 
 cc_prebuilt_library_shared {
 	name: "libcdfw",
@@ -3725,6 +3742,24 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/egl/libq3dtools_adreno.so"],
+		},
+	},
+	relative_install_path: "egl",
+	compile_multilib: "32",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libq3dtools_esx",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/egl/libq3dtools_esx.so"],
 		},
 	},
 	relative_install_path: "egl",

@@ -174,6 +174,7 @@ PRODUCT_PACKAGES += \
     libGLESv1_CM_adreno \
     libGLESv2_adreno \
     libq3dtools_adreno \
+    libq3dtools_esx \
     libQTapGLES \
     libRBEGL_adreno \
     libRBGLESv1_CM_adreno \
@@ -183,6 +184,7 @@ PRODUCT_PACKAGES += \
     libC2D2 \
     libc2d30-a3xx \
     libc2d30-a4xx \
+    libc2d30-a5xx \
     libCB \
     libgsl \
     libllvm-glnext \
