@@ -361,6 +361,7 @@ PRODUCT_PACKAGES += \
     libqmi_client_qmux \
     libqmi_common_so \
     libqmi_csi \
+    libsmemlog \
     libqmi_csvt_srvc \
     libqmi_encdec \
     libqmiservices \
