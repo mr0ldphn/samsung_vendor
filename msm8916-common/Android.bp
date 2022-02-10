@@ -815,6 +815,24 @@ cc_prebuilt_library_shared {
 
 
 cc_prebuilt_library_shared {
+	name: "android.hardware.bluetooth@1.0-impl-qti",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so"],
+		},
+	},
+	compile_multilib: "32",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+
+cc_prebuilt_library_shared {
 	name: "android.hardware.gnss@2.1-impl-qti",
 	owner: "samsung",
 	strip: {
