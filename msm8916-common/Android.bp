@@ -878,6 +878,7 @@ cc_prebuilt_library_shared {
 			srcs: ["proprietary/vendor/lib/hw/vendor.qti.gnss@4.0-impl.so"],
 		},
 	},
+	relative_install_path: "hw",
 	compile_multilib: "32",
 	check_elf_files: false,
 	prefer: true,
