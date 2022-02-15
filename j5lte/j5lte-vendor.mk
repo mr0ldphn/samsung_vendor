@@ -5,7 +5,7 @@
 PRODUCT_SOONG_NAMESPACES += \
     vendor/samsung/j5lte
 
-PRODUCT_COPY_FILES += \
-    vendor/samsung/j5lte/proprietary/vendor/lib/hw/sensors.vendor.msm8916.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sensors.vendor.msm8916.so \
-    vendor/samsung/j5lte/proprietary/vendor/lib/libsec-ril-dsds.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsec-ril-dsds.so \
-    vendor/samsung/j5lte/proprietary/vendor/lib/libsec-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsec-ril.so
+PRODUCT_PACKAGES += \
+    sensors.vendor.msm8916 \
+    libsec-ril-dsds \
+    libsec-ril
